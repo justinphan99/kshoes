@@ -4,9 +4,9 @@ import unittest
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
-from products-service import blueprint
-from products-service.main import create_app, db
-from products-service.main.model import user
+from app import blueprint
+from app.main import create_app, db
+from app.main.model import user
 
 app = create_app('dev')
 app.register_blueprint(blueprint)
